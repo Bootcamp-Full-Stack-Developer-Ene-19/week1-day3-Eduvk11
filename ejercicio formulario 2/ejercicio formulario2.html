@@ -17,41 +17,41 @@
                 <li>payment selection</li>
             </ol>
             <form action="">
-
-                <h1>Shipping Information</h1>
                 <article>
-                    <address>
-                        Jamy Larson<br>
-                        Unit 2 Green Mount Retail Park<br>
-                        Halifax<br>
-                        HX1 5QN<br>
-                        Tel: 0344 332 5931
-                    </address>
-                    <div>
-                        <a href="#">Edit Address</a>
-                    </div>
-                    <div>
-                        <a href="#">Add New</a>
+                    <h1>Shipping Information</h1>
+                    <div class="col">
+                        <address>
+                            Jamy Larson<br>
+                            Unit 2 Green Mount Retail Park<br>
+                            Halifax<br>
+                            HX1 5QN<br>
+                            Tel: 0344 332 5931
+                        </address>
                     </div>
                     <div class="col">
-                        <img src="map.png" alt="Mapa de situacion de la tienda">
+                        <a href="#">Edit Address</a>
+                        <span aria-hidden="true"></span>
+                        <a href="#">Add New</a>
+                        <div class="col">
+                            <img src="map.png" alt="">
+                        </div>
                     </div>
                 </article>
 
                 <h1>Shipping Method</h1>
 
                 <div class="method">
-                    <input type="radio" name="method" id="standart">
-                    <label for="standart">Standart Delivery <samp>Free</samp></label>
-                    <p>Estimated 14-20 Day Shipping (Duties and taxes may be due upon delivery)</p>
+                    <input type="radio" name="method" id="standard">
+                    <label for="standard" aria-describedby="desstandard">Standart Delivery <samp>Free</samp></label>
+                    <p id="desstandard">Estimated 14-20 Day Shipping (Duties and taxes may be due upon delivery)</p>
                 </div>
                 <div class="method">
                     <input type="radio" name="method" id="fast">
-                    <label for="fast">Fast Delivery <samp>€ 8.00</samp></label>
-                    <p>Estimated 2-5 Days Shipping (Duties and taxes may be due upon delivery)</p>
+                    <label for="fast" aria-describedby="desfast">Fast Delivery <samp>€ 8.00</samp></label>
+                    <p id="desfast">Estimated 2-5 Days Shipping (Duties and taxes may be due upon delivery)</p>
                 </div>
                 <div>
-                    <a href="#" Back to Customer Info</a> <button class="summit"><a href="#">CONTINUE TO PAYMEN</a></button>
+                    <a href="#" Back to Customer Info</a>Back to Customer Info <button class="summit"><a href="#">CONTINUE TO PAYMEN</a></button>
                 </div>
 
             </form>
