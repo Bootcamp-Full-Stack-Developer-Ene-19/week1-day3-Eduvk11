@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    form h1{
+      background-color: rgb(247, 23, 23);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <main>
+
+     <!-- Breadcrumbs -->
+     <ol aria-label="Rastro de migas" class="tabs">
+        <li aria-current="true">Customer info</li>
+        <li class="tabs--activo">Shipping info</li>
+        <li>Payment selection</li>
+      </ol>
+
+
+      <article class="shipping-info">
+        <h1>Shipping Information</h1>
+        <div class="container">
+          <div class="col">
+            <address class="col__info">
+              Jamy Larson<br>
+              Unit 2 Green Mount Retail Park<br>
+              Halifax<br>
+              HX1 5QN<br>
+              Tel: 0344 332 5931<br>
+            </address>
+            <a href="#" class="shipping-info__link">Edit Address</a>
+            <span aria-hidden="true"></span>
+            <a href="#" class="shipping-info__link">Add New</a>
+          </div>
+          <div class="col__img">
+            <img src="..." alt="" class="col__map">
+          </div>
+        </div>
+      </article>
+
+      <!-- Form -->
+      <form action="" class="method-pay">
+        <h1>Shipping Method</h1>
+        <div>
+<input type="radio" name="shipping" id="standard" class="method-pay__control">
+          <label for="standard" aria-describedby="descStandard" class="method-pay__name">Standard Delivery <span>Free</span></label>
+          <p id="descStandard">Estimated 14-20 Day Shipping (Duties and taxes may be due upon delivery)</p>
+        </div>
+        <div>
+          <input type="radio" name="shipping" id="fast" class="method-pay__control">
+          <label for="fast" aria-describedby="descFast" class="method-pay__name">Fast Delivery <span>€ 8.00</span></label>
+          <p id="descFast">Estimated 2-5 Days Shipping (Duties and taxes may be due upon delivery)</p>
+        </div>
+
+        <div>
+          <a href="#" class="link">Back to Customer Info</a>
+          <button type="submit" class="checkout__btn--sumit">Continue to payment</button>
+        </div>
+      </form>
+
+    </main>
+
+   <!-- Resumen carrito -->
+   <aside class="carrito">
+      <h1>Shopping Cart <span aria-label="Número de productos">2</span></h1>
+      <ul class="articulos">
+        <li>
+          <a href="#">
+            <img src="..." alt="">
+            Lightweight College Backpack
+            <span aria-label="precio">€ 99.90</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="..." alt="">
+            Business Casual Leather Watch Waterproof
+            <span aria-label="precio">€ 69.90</span>
+          </a>
+        </li>
+      </ul>
+      <div>
+        <button type="button" class="carrito__btn--voucher">Have a Voucher?</button>
+        <form action="" class="drop">
+          <label for="code" class="drop__name">Insert vaucher code</label>
+          <input type="text" id="code" class="drop__control">
+          <button type="submit" class="drop__btn--submit">Submit</button>
+        </form>
+      </div>
+      <table class="tiket">
+        <caption class="sr-only">Totales del carrito</caption>
+        <tr>
+          <th scope="row">Subtotal</th>
+          <td>€ 169.80</td>
+        </tr>
+        <tr>
+          <th scope="row">Shipping</th>
+          <td>free</td>
+        </tr>
+        <tr class="">
+          <th scope="row">Total</th>
+          <td>€ 169.80</td>
+        </tr>
+      </table>
+    </aside>
+  </div> <!-- //.container -->
+
+</body>
+</html>

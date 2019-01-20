@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulario 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <ol aria-label="rastro de migas">
+                <li aria-controls="false">customer info</li>
+                <li>sipphing info</li>
+                <li>payment selection</li>
+            </ol>
+            <form action="">
+                <h1>Customer information</h1>
+                <div>
+                    <label for="firsName">FRIST NAME</label>
+                    <input type="text" name="customer" id="firsName">
+                </div>
+                <div>
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" name="customer" id="lastName">
+                </div>
+
+                <div>
+                    <label for="address">ADDRESS</label>
+                    <input type="text" id="address">
+                </div>
+
+                <div>
+                    <label for="country">COUNTRY</label>
+                    <select id="country">
+                        <option>Select your country</option>
+                        <option>España</option>
+                        <option>Francia</option>
+                        <option>Italia</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="city">CITY</label>
+                    <input type="text" id="city">
+                </div>
+                <div>
+                    <label for="postal">POSTAL CODE</label>
+                    <input type="number" id="postal">
+                    <button type="button">FIND</button>
+                </div>
+                <div>
+                    <label for="num">PHONE</label>
+                    <input type="number" id="num">
+                </div>
+            </form>
+            <div>
+                <a href="#">Return to shop</a>
+                <button class="summit">CONTINUE TO SHOP</button>
+            </div>
+        </main>
+    </div>
+    <aside>
+        <h1>Shopping Cart</h1><samp aria-label="num de productos">2</samp>
+        <ul>
+            <li><a href="#"></a><img src="producto-2.jpg" alt="">Lightweight College Backpack</li>
+            <span>€ 99.90</span>
+            <li> <a href="#"></a><img src="producto-1.jpg" alt="">Business Casual Leather Watch Waterproof<span>€69.90</span></li>
+        </ul>
+        <div>
+            <button type="button">Have a Voucher?</button>
+            <form action="">
+                <label for="code">Insert Voucher</label>
+                <input type="text" id="code">
+            </form>
+        </div>
+        <table>
+            <caption class="sr-only">Total de carrito</caption>
+            <tr>
+                <th scope="row">Subtotal</th>
+                <td>€ 169.80</td>
+                <th scope="row">Sipphing</th>
+                <td>Free</td>
+                <th scope="row">Total</th>
+                <td>€ 169.80</td>
+            </tr>
+        </table>
+    </aside>
+</body>
+
+</html>
